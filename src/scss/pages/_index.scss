@@ -3,6 +3,7 @@
 
 html{
    font-size: s.$font-size;
+   font-family: Poppins, sans-serif;
 
    background-color: c.$red;
    background-image: url(../assets/img/bg-intro-mobile.png);
@@ -27,7 +28,7 @@ body{
 }
 
 .main{
-   padding: 2rem 1.5rem;
+   padding: 2rem 1rem;
    display: flex;
    flex-direction: column;
 
@@ -37,16 +38,19 @@ body{
    
    &__title{
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1rem;
+      line-height: 1.5;
       background-color: c.$blue;
-      padding: 1rem;
+      
+      padding: 1rem 4.5rem;
       font-weight: 300;
       box-shadow: 0 5px 0 1px rgba(0,0,0,0.2);
       border-radius: 0.5rem;
+      color: c.$gray;
    }
    
    &__plans{
+      color: c.$white;  
       font-weight: 700;
-      font-weight: 600;
    }
 }
