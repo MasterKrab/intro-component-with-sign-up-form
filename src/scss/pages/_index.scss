@@ -1,0 +1,52 @@
+@use "../variables/colors" as c;
+@use "../variables/sizes" as s;
+
+html{
+   font-size: s.$font-size;
+
+   background-color: c.$red;
+   background-image: url(../assets/img/bg-intro-mobile.png);
+   background-repeat: no-repeat;
+
+   @media screen and (min-width:1090px){
+      background-image: url(../../assets/img/bg-intro-desktop.png);
+   }
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: c.$white;
+   min-height: 100vh;
+
+   @media screen and (min-width: 1090px){
+      flex-direction: row;
+   }
+}
+
+.main{
+   padding: 2rem 1.5rem;
+   display: flex;
+   flex-direction: column;
+
+   @media screen and (min-width: 1090px){
+      width: 550px;
+   }
+   
+   &__title{
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: c.$blue;
+      padding: 1rem;
+      font-weight: 300;
+      box-shadow: 0 5px 0 1px rgba(0,0,0,0.2);
+      border-radius: 0.5rem;
+   }
+   
+   &__plans{
+      font-weight: 700;
+      font-weight: 600;
+   }
+}

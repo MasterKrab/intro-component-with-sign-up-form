@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      title Intro component with sign up form
+      //- CSS
+      link(rel="stylesheet", href="css/styles.css")
+      //- Favicons
+      link(rel="apple-touch-icon", sizes="57x57", href="assets/favicons/apple-icon-57x57.png")
+      link(rel="apple-touch-icon", sizes="60x60", href="assets/favicons/apple-icon-60x60.png")
+      link(rel="apple-touch-icon", sizes="72x72", href="assets/favicons/apple-icon-72x72.png")
+      link(rel="apple-touch-icon", sizes="76x76", href="assets/favicons/apple-icon-76x76.png")
+      link(rel="apple-touch-icon", sizes="114x114", href="assets/favicons/apple-icon-114x114.png")
+      link(rel="apple-touch-icon", sizes="120x120", href="assets/favicons/apple-icon-120x120.png")
+      link(rel="apple-touch-icon", sizes="144x144", href="assets/favicons/apple-icon-144x144.png")
+      link(rel="apple-touch-icon", sizes="152x152", href="assets/favicons/apple-icon-152x152.png")
+      link(rel="apple-touch-icon", sizes="180x180", href="assets/favicons/apple-icon-180x180.png")
+      link(rel="icon" type="image/png", sizes="192x192",  href="assets/favicons/android-icon-192x192.png")
+      link(rel="icon" type="image/png", sizes="32x32", href="assets/favicons/favicon-32x32.png")
+      link(rel="icon" type="image/png", sizes="96x96", href="assets/favicons/favicon-96x96.png")
+      link(rel="icon" type="image/png", sizes="16x16", href="assets/favicons/favicon-16x16.png")
+      link(rel="manifest" href="assets/favicons/manifest.json")
+      meta(name="msapplication-TileColor", content="#ffffff")
+      meta(name="msapplication-TileImage", content="/ms-icon-144x144.png")
+      meta(name="theme-color", content="#ffffff")
+   body 
+      header.header 
+         h1.header__title
+            | Learn to code by 
+            br
+            | watching others
+         p.header__description See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
+      main.main 
+         h2.main__title
+            span.main__plans Try it free 7 days 
+            | then $20/mo. thereafter
+         form.form#form(action="", novalide) 
+            input.form__input.form__input--error(type="text", name="first-name", placeholder="First Name")
+            input.form__input(type="text", name="last-name", placeholder="Last Name")
+            input.form__input(type="email", name="email", placeholder="Email Address")
+            input.form__input(type="password", name="password", placeholder="Password")
+            button.form__submit(type="submit") Claim your free trial
+            p.form__condition
+               | By clicking the button, you are agreeing to our 
+               span.form__terms Terms and Services
+            

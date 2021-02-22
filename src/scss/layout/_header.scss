@@ -1,0 +1,27 @@
+@use "../variables/colors" as c;
+
+.header{
+   text-align: center;
+   margin-top: 70px;
+   max-width: 450px;
+   padding-left: 1rem;
+   padding-right: 1rem;
+
+   @media screen and(min-width: 1090px) {
+      text-align: start;
+      max-width: 550px;
+   }
+
+   &__title{
+      font-size: 3rem;
+
+      @media screen and (min-width: 1090px){
+         font-size: 3.5rem;
+         margin-top: 0;
+      }
+   }
+   
+   &__description{
+      font-size: 1.3rem;
+   }
+}
