@@ -4,7 +4,6 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 20px;
    padding: 1.5rem;
    background-color: c.$white;
    border-radius: 0.5rem;
@@ -13,6 +12,11 @@
    @media screen and (min-width:1090px){
       padding: 2rem;
    }
+
+   &__input,
+   &__submit{
+      margin-top: 30px;
+   }
    
    &__input{
       border-radius: 5px;
@@ -20,6 +24,7 @@
       border: 1px solid c.$grayish-blue;
       padding: 15px;
       opacity: 0.6;
+      
       
       &::placeholder{
          color: c.$dark-blue;
@@ -55,13 +60,21 @@
    }
 
    &__condition{
-      margin: 0;
       font-size: 15px;
       text-align: center;
       color: c.$grayish-blue;
    }
 
-   &__terms{
+   &__terms,
+   &__error{
       color: c.$red;
+   }
+   
+   &__error{
+      margin-top: 10px;
+      margin-bottom: 0;
+      align-self: flex-end;
+      font-size: 12px;
+      font-style: italic;
    }
 }

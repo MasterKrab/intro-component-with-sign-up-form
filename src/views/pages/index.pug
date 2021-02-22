@@ -36,13 +36,14 @@ html(lang="en")
          h2.main__title
             span.main__plans Try it free 7 days 
             | then $20/mo. thereafter
-         form.form#form(action="", novalide) 
-            input.form__input.form__input--error(type="text", name="first-name", placeholder="First Name")
-            input.form__input(type="text", name="last-name", placeholder="Last Name")
+         form.form#form(action="#") 
+            input.form__input(type="text", name="firstname", placeholder="First Name")
+            input.form__input(type="text", name="lastname", placeholder="Last Name")
             input.form__input(type="email", name="email", placeholder="Email Address")
             input.form__input(type="password", name="password", placeholder="Password")
             button.form__submit(type="submit") Claim your free trial
             p.form__condition
                | By clicking the button, you are agreeing to our 
                span.form__terms Terms and Services
+      script(src="js/scripts-min.js") 
             
